@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Recipes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold text-center mb-8">How are you feeling today?</h1>
+        
+        <div class="flex justify-center gap-4 mb-8">
+            <button class="mood-btn" data-mood="happy">😊 Happy</button>
+            <button class="mood-btn" data-mood="sad">😢 Sad</button>
+            <button class="mood-btn" data-mood="tired">😴 Tired</button>
+        </div>
+
+        <div id="recipe-container" class="hidden max-w-md mx-auto bg-white rounded-lg shadow-lg p-6">
+            <h2 id="recipe-name" class="text-2xl font-bold mb-4"></h2>
+            <div class="mb-4">
+                <h3 class="font-bold">Ingredients:</h3>
+                <p id="recipe-ingredients"></p>
+            </div>
+            <div class="mb-4">
+                <h3 class="font-bold">Instructions:</h3>
+                <p id="recipe-instructions"></p>
+            </div>
+            <button id="new-recipe" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                Get Another Recipe
+            </button>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
